@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="boxoffice">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Book On Here</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="library/bootstrap.min.css">
+
+    <!-- library script files  -->
+
+    <script src="library/angular.min.js"></script>
+    <script src="library/angular-route.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+    
+    <script src="app/app.js"></script>
+    <script src="app/controllers/homecontroller.js"></script>
+     <script src="app/controllers/infocontroller.js"></script>
+     <script src="app/controllers/confirmcontroller.js"></script>
+     <script src="library/bootstrap.js"></script>
+    
+</head>
+
+<body>
+    
+  
+    
+     <div class="container-fluid main">
+        <nav>
+	       <a href="#/info">Page 2</a>
+	   </nav>
+                
+        <div class='loadhtml' ng-view>
+        </div>
+
+
+
+    </div>
+    
+   
+   
+</body>
+<script>
+
+  console.log(document.URL) ;
+    $(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+
+</script>
+</html>
